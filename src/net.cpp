@@ -2,6 +2,7 @@
 
 #include <arpa/inet.h>
 #include <fstream>
+#include <iostream>
 
 std::string net::ulToIP(unsigned long address){
 	struct in_addr addr;
@@ -16,7 +17,7 @@ net::node net::getNode(std::string input, std::string protocol){
 		std::to_string(std::stoul(input.substr(9, 4), nullptr, 16)),
 		ulToIP(std::stoul(input.substr(14, 8), nullptr, 16)),
 		std::to_string(std::stoul(input.substr(23, 4), nullptr, 16)),
-		input.substr(28, 2)
+		net::tcpStates[std::stoi(input.substr(28, 2))]
 	};
 }
 
