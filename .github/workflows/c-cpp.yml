@@ -10,6 +10,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    include:
+      - runs-on: ubuntu-latest
+      compiler: gcc
+      gcc: 14
 
     steps:
     - uses: actions/checkout@v4
