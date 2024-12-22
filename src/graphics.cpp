@@ -1,6 +1,5 @@
 #include "graphics.hpp"
 #include "net.hpp"
-#include <memory>
 
 void graphics::display(){
 	net::update();
