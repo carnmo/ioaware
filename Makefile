@@ -7,7 +7,7 @@ SOURCES=$(wildcard $(SOURCEPATH)/*.cpp)
 OBJECTS=$(SOURCES:.cpp=.o)
 TARGET=ioaware
 
-CXXFLAGS=-std=c++23
+CXXFLAGS=-std=c++17
 CXXFLAGS+=-g0
 CXXFLAGS+=-m64
 CXXFLAGS+=-march=native
@@ -21,7 +21,6 @@ CXXFLAGS+=-Wall
 CXXFLAGS+=-Werror
 CXXFLAGS+=-Wextra
 CXXFLAGS+=-Wpedantic
-CXXFLAGS+=-D_GNU_SOURCE
 
 LDFLAGS=-L$(LIBPATH)
 LDLIBS=-lraylib
