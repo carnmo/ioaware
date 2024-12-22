@@ -15,20 +15,20 @@ class net{
 		};
 
 		static const inline std::vector<std::string> tcpStates{
-			{"DUMMY"},
-			{"ESTABLISHED"},
-			{"SYN_SENT"},
-			{"SYN_RECV"},
-			{"FIN_WAIT1"},
-			{"FIN_WAIT2"},
-			{"TIME_WAIT"},
-			{"CLOSE"},
-			{"CLOSE_WAIT"},
-			{"LAST_ACK"},
-			{"LISTEN"},
-			{"CLOSING"},
-			{"NEW_SYN_RECV"},
-			{"MAX_STATES"}
+			"DUMMY",
+			"ESTABLISHED",
+			"SYN_SENT",
+			"SYN_RECV",
+			"FIN_WAIT1",
+			"FIN_WAIT2",
+			"TIME_WAIT",
+			"CLOSE",
+			"CLOSE_WAIT",
+			"LAST_ACK",
+			"LISTEN",
+			"CLOSING",
+			"NEW_SYN_RECV",
+			"MAX_STATES"
 		};
 
 		static inline std::vector<node> nodes;

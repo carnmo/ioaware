@@ -2,7 +2,6 @@
 
 #include <arpa/inet.h>
 #include <fstream>
-#include <iostream>
 
 std::string net::ulToIP(unsigned long address){
 	struct in_addr addr;
