@@ -7,7 +7,7 @@ SOURCES=$(wildcard $(SOURCEPATH)/*.cpp)
 OBJECTS=$(SOURCES:.cpp=.o)
 TARGET=ioaware
 
-CXXFLAGS=-std=c++17
+CXXFLAGS=-std=c++23
 CXXFLAGS+=-g0
 CXXFLAGS+=-m64
 CXXFLAGS+=-march=native
